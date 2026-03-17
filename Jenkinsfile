@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/firdose0402/node-docker-devops-project.git'
+                git branch: 'main', url: 'https://github.com/firdose0402/node-docker-devops-project.git'
             }
         }
 
